@@ -18,11 +18,11 @@ const clientSchema = new Schema({
     type: String,
     required: true,
   },
-  massage: {
+  message: {
     type: String,
     required: true,
   },
 });
 
-const Client = mongoose.model("Client", clientSchema);
+const Client = mongoose.model("Clients", clientSchema);
 module.exports = Client;

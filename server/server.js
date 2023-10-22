@@ -9,9 +9,20 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 const URL =
   "mongodb+srv://KavindaRajapaksha:X2z7pku9wIYihAzR@cluster0.xihfyjd.mongodb.net/Portfolio_DB";
+
+const clientRouter = require("./routes/clients");
+app.use("/clients", clientRouter);
+const adminRouter = require("./routes/admins");
+app.use("/admins", adminRouter);
+const adminLoginRouter = require("./routes/adminLogin");
+app.use("/adminLogin", adminLoginRouter);
+
+
+
+
 const ConnectMongoDB = (URL) => {
   try {
     mongoose.set("strictQuery", false);
