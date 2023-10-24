@@ -1,25 +1,130 @@
-.navigationbar{
-    font-family: 'Poppins', sans-serif;
-  
-}
-header{
-    top:0;
-    left:0;
-    position: fixed;
-    width: 100%;
-    padding: 2rem 9%;
-    background-color: var(--br-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 100;
-}
-.navbar-brand{
-    font-weight: 800;
-    margin-left: 100px;
-}
-.navbar{
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center  ;
     background-color: #1f242d;
+   
     
+}
+.title{
+    font-size: 2rem;
+    margin: 1rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2rem;
+
+}
+.title:hover{
+    color: aqua;
+}
+nav ul{
+    display: flex;
+    margin-right: 4rem;
+}
+
+
+nav ul li{
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 100%;
+    margin: 0 0.5rem;
+   padding:0.5rem;
+   font-weight: bold
+}
+
+.home-btn:hover,
+.about-btn:hover,
+.services-btn:hover,
+.portfolio-btn:hover,
+.contacts-btn:hover {
+    color: aqua;
+    transition: color 0.3s; 
+}
+
+
+.home-btn:hover::after,
+.about-btn:hover::after,
+.services-btn:hover::after,
+.portfolio-btn:hover::after,
+.contacts-btn:hover::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent, aqua, transparent);
+    transition: transform 0.8s;
+    transform: scaleX(0); /* Start with zero width */
+}
+
+/* On hover, expand the shine effect */
+.home-btn:hover::after,
+.about-btn:hover::after,
+.services-btn:hover::after,
+.portfolio-btn:hover::after,
+.contacts-btn:hover::after {
+    transform: scaleX(1); /* Expand to full width */
+}
+
+.menu{
+    display: none;
+    position:absolute;
+    top:0.75rem;
+    right:0.5rem;
+    flex-direction: column ;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+.menu:hover{
+    cursor: pointer;
+    color: aqua;
+}
+.menu span{
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff ;
+    border-radius: 0.2rem;
+
+}
+.menu span{
+    color: aqua;
+}
+@media(max-width:800px){
+    .menu{
+        display:flex;
+    }
+    .menu:hover{
+        color: aqua;
+    }
+    nav{
+        flex-direction: column;
+        align-items: start;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+    nav ul.open{
+        display: flex;
+    }
+    nav ul li{
+        width:100%;
+        text-align: center;
+
+    }
+    nav ul li a{
+        margin: 0.2rem 0.5rem;
+    }
+
 }
 

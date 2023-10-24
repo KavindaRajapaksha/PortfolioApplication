@@ -1,34 +1,57 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./NavBar.css";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="navigationbar">
       <header className="header">
-      <nav class="navbar navbar-expand-lg navbar-dark ">
-  <a class="navbar-brand" href="/">Portfolio.</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="services">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="/portfolio">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="/contacts">Contacts</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+        <nav className="navbar">
+          <Link to="/" className="title">
+            Portfolio.
+          </Link>
+
+          <div
+            className="menu"
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+            }}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <ul className={menuOpen ? "open" : ""}>
+            <li>
+              <Link to="/" class="home-btn">
+                Home
+              </Link>{" "}
+            </li>
+            <li>
+              <Link to="/about" className="about-btn">
+                About
+              </Link>{" "}
+            </li>
+            <li>
+              <Link to="/services" className="services-btn">
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link to="/portfolio" className="portfolio-btn">
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="/contacts" className="contacts-btn">
+                Contacts
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </header>
     </div>
   );

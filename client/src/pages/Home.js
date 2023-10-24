@@ -11,7 +11,7 @@ import './Home.css';
 const Home = () => {
   return (
     <div className='homePage'>
-    <section className='hedder'>
+    <section className='hedderS'>
       <NavBar/>
     </section>
       <section className='home' id='home'>
