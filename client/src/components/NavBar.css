@@ -1,0 +1,25 @@
+.navigationbar{
+    font-family: 'Poppins', sans-serif;
+  
+}
+header{
+    top:0;
+    left:0;
+    position: fixed;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: var(--br-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+.navbar-brand{
+    font-weight: 800;
+    margin-left: 100px;
+}
+.navbar{
+    background-color: #1f242d;
+    
+}
+

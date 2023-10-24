@@ -1,0 +1,48 @@
+.home{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Fira Sans', sans-serif; */
+    min-height:100vh;
+    padding:10rem 9% 2rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none ;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --br-color:#1f242d;
+    --second-color:#323946;
+    --text-color: #fff;
+    --main-color:#0ef;
+}
+
+body{
+    background-color: var(--br-color);
+    color: var(--text-color);
+}
+
+
+
+
+
+
+
+.facebook:hover{
+   cursor: pointer;
+}
+
+.youtube:hover{
+   cursor: pointer;
+}
+.github:hover{
+   cursor: pointer;
+}
+.linkedin:hover{
+   cursor: pointer;
+}
