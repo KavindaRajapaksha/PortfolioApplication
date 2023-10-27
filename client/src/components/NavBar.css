@@ -4,6 +4,7 @@ nav{
    align-items: center  ;
     background-color: #1f242d;
    
+   
     
 }
 .title{
@@ -13,6 +14,7 @@ nav{
     text-decoration: none;
     color: #fff;
     margin-left: 2rem;
+    
 
 }
 .title:hover{
@@ -21,6 +23,7 @@ nav{
 nav ul{
     display: flex;
     margin-right: 4rem;
+    
 }
 
 
