@@ -5,6 +5,7 @@ import "./Contacts.css";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+
 const Contacts = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -115,7 +116,7 @@ const Contacts = () => {
           from repetition, injected humour, or non-characteristic words etc.
         </p>
 
-        <button className="adminOnly">Admin only</button>
+        <button className="adminOnly" onClick={()=> navigate("/contacts/login")}>Admin only</button>
       </section>
       <section className="footer">
         <Footer />

@@ -1,0 +1,59 @@
+.registerPage {
+  flex-direction: column;
+
+  height: 100vh;
+  background-image: url(../assets/pexels-andrew-neel-3178786.jpg);
+  background-size: cover;
+}
+.register {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+  margin-top: auto;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;
+}
+.register-container {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  width: 30%;
+
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 0 0.5rem #5d5c5c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.registerName {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+.register-btn {
+    background-color: rgb(20, 79, 227);
+    color: white;
+  padding: 0.5rem 1rem;
+    width: 50%;
+    border-radius: 40px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center; 
+    width: 10rem;/* Center-align the text within the button */
+}
+
+.register-btn:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+.register p {
+  font-size: 90%;
+
+  margin-bottom: 2rem;
+}
