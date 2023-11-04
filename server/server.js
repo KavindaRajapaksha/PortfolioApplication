@@ -20,9 +20,6 @@ app.use("/admins", adminRouter);
 const adminLoginRouter = require("./routes/adminLogin");
 app.use("/adminLogin", adminLoginRouter);
 
-
-
-
 const ConnectMongoDB = (URL) => {
   try {
     mongoose.set("strictQuery", false);

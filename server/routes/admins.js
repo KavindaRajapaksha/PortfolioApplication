@@ -22,14 +22,15 @@ router.route("/add").post(async (req, res) => {
     });
 });
 
-router.route("/").get((req,res) => {
-
-    Admin.find().then((admin)=>{
-        res.json(admin);
-    }).catch((err)=>{
-        console.log(err);
-        res.status(400).json("Error: "+err);
+router.route("/").get((req, res) => {
+  Admin.find()
+    .then((admin) => {
+      res.json(admin);
     })
+    .catch((err) => {
+      console.log(err);
+      res.status(400).json("Error: " + err);
+    });
 });
 
 module.exports = router;

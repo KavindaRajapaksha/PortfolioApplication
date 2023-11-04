@@ -1,20 +1,20 @@
-import React from 'react';
-import './ViewMessage.css';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import React from "react";
+import "./ViewMessage.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router-dom";
 
 const ViewMessage = () => {
   const { id } = useParams();
   const [client, setClient] = useState(null);
 
   useEffect(() => {
-    console.log('ID:', id);
+    console.log("ID:", id);
     axios
       .get(`http://localhost:8000/clients/get/${id}`)
       .then((res) => {
         setClient(res.data);
-        console.log('Client:', res.data);
+        console.log("Client:", res.data);
       })
       .catch((error) => {
         console.error("Error fetching Client data:", error);

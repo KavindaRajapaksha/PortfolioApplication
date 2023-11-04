@@ -35,7 +35,7 @@ const About = () => {
         </div>
       </section>
       <section className="footer">
-        <Footer/>
+        <Footer />
       </section>
     </div>
   );

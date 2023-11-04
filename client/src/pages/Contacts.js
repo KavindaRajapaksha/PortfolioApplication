@@ -116,7 +116,12 @@ const Contacts = () => {
           from repetition, injected humour, or non-characteristic words etc.
         </p>
 
-        <button className="adminOnly" onClick={()=> navigate("/contacts/login")}>Admin only</button>
+        <button
+          className="adminOnly"
+          onClick={() => navigate("/contacts/login")}
+        >
+          Admin only
+        </button>
       </section>
       <section className="footer">
         <Footer />

@@ -1,68 +1,59 @@
-.login{
-   min-height:100vh;
-   padding:10rem 9% 2rem;
-    margin-top:auto ;
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center;
-   
+.login {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+  margin-top: auto;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;
 }
-.loginpage{
-    background-image: url(../assets/pexels-andrew-neel-3178786.jpg);
-    background-size: cover;
-   
+.loginpage {
+  background-image: url(../assets/pexels-andrew-neel-3178786.jpg);
+  background-size: cover;
 }
-.login-container{
-   
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    width:30%;
-    align-items: center;
-    text-align: center;
-    border-radius: 30px;
-    box-shadow: 0 0 0.5rem #5d5c5c;
-    
-
+.login-container {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  width: 30%;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 0 0.5rem #5d5c5c;
 }
 
-
-
-.loginName{
-   margin-top: 3rem;
-   margin-bottom: 2rem;
-   font-weight: bolder;
-
+.loginName {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
 }
-.login p{
-    font-size: 90%;
-    margin-bottom: 3rem;
-    margin-top: 1rem;
+.login p {
+  font-size: 90%;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
 }
-.loginDetails label{
-    font-size: 100%;
-    font-weight: bolder;
-    margin-bottom: 1rem;
+.loginDetails label {
+  font-size: 100%;
+  font-weight: bolder;
+  margin-bottom: 1rem;
 }
-.loginDetails input{
-    width: 80%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #898888;
-    border-radius: 10px;
-    outline: none;
+.loginDetails input {
+  width: 80%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #898888;
+  border-radius: 10px;
+  outline: none;
 }
-.loginDetails .pword{
-    margin-bottom: 2rem;
-   
+.loginDetails .pword {
+  margin-bottom: 2rem;
 }
-.login-btn{
-    background-color: rgb(20, 79, 227);
-    color: white;
-    padding: 0.5rem 2rem;
-    width: 50%;
-    border-radius: 40px;
+.login-btn {
+  background-color: rgb(20, 79, 227);
+  color: white;
+  padding: 0.5rem 2rem;
+  width: 50%;
+  border-radius: 40px;
 }
-.login-btn:hover{
-    cursor: pointer;
-    transform: scale(1.02);
+.login-btn:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }

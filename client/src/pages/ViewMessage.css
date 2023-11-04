@@ -1,13 +1,12 @@
 .viewmessage {
-    background-image:  url(../assets/pexels-andrew-neel-3178786.jpg);
-    background-size:cover;
-    min-height: 100vh;
-  
+  background-image: url(../assets/pexels-andrew-neel-3178786.jpg);
+  background-size: cover;
+  min-height: 100vh;
 }
-.viewmessage-container{
-    padding:10rem 9% 2rem;
-    margin-top:auto ;
-   text-align: center;
-    justify-content: center;
-    align-items: center;
+.viewmessage-container {
+  padding: 10rem 9% 2rem;
+  margin-top: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }

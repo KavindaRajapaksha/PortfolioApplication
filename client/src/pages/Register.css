@@ -37,15 +37,15 @@
   margin-bottom: 1rem;
 }
 .register-btn {
-    background-color: rgb(20, 79, 227);
-    color: white;
+  background-color: rgb(20, 79, 227);
+  color: white;
   padding: 0.5rem 1rem;
-    width: 50%;
-    border-radius: 40px;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    text-align: center; 
-    width: 10rem;/* Center-align the text within the button */
+  width: 50%;
+  border-radius: 40px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 10rem; /* Center-align the text within the button */
 }
 
 .register-btn:hover {

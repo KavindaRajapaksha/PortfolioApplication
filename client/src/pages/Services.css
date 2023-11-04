@@ -46,45 +46,47 @@
 
 .box1 p,
 .box2 p,
-.box3 p{
-    font-size: 100%;
+.box3 p {
+  font-size: 100%;
 }
 .box1 h3,
 .box2 h3,
-.box3 h3{
-    font-size: 110%;
-    font-weight: bold;
+.box3 h3 {
+  font-size: 110%;
+  font-weight: bold;
 }
-.btn-wd, .btn-gd, .btn-dm{
-    display: inline-block;
-    padding: 0.3rem 2rem;
-    background-color: var(--main-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 0.1rem var(--main-color);
-    font-size: 1.2rem;
-    color: var(--second-bg-color);
-    letter-spacing: .06rem;
-    font-weight: 600;
-    margin-top: 2.5rem;
-    text-decoration: none;
-    font-size: 80%;
+.btn-wd,
+.btn-gd,
+.btn-dm {
+  display: inline-block;
+  padding: 0.3rem 2rem;
+  background-color: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 0.1rem var(--main-color);
+  font-size: 1.2rem;
+  color: var(--second-bg-color);
+  letter-spacing: 0.06rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  text-decoration: none;
+  font-size: 80%;
 }
-.btn-wd:hover, .btn-gd:hover, .btn-dm:hover{
-    background-color: var(--second-bg-color);
-    color: var(--main-color);
-    cursor: pointer;
+.btn-wd:hover,
+.btn-gd:hover,
+.btn-dm:hover {
+  background-color: var(--second-bg-color);
+  color: var(--main-color);
+  cursor: pointer;
 }
 .services-heading {
-    font-size: 3rem;
-    font-weight: 1000;
-    margin-bottom: 5rem; /* Remove margin-bottom */
-    text-align: center; /* Center-align the text */
-    
-    justify-content: center;
-    align-items: center;
-    
+  font-size: 3rem;
+  font-weight: 1000;
+  margin-bottom: 5rem; /* Remove margin-bottom */
+  text-align: center; /* Center-align the text */
+
+  justify-content: center;
+  align-items: center;
 }
-.services-heading span{
+.services-heading span {
   color: var(--main-color);
 }
-

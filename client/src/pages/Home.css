@@ -1,135 +1,116 @@
-.home{
-    font-family: 'Poppins', sans-serif;
-    /* font-family: 'Fira Sans', sans-serif; */
-    min-height:100vh;
-    padding:10rem 9% 2rem;
-    margin-top:auto ;
+.home {
+  font-family: "Poppins", sans-serif;
+  /* font-family: 'Fira Sans', sans-serif; */
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+  margin-top: auto;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    border: none ;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-}
-
-:root{
-    --br-color:#1f242d;
-    --second-color:#323946;
-    --text-color: #fff;
-    --main-color:#0ef;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--br-color);
-    color: var(--text-color);
-  
+:root {
+  --br-color: #1f242d;
+  --second-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
 }
 
-  
-.home span{
-    color: var(--main-color);
-}
-.home h1{
-    font-size: 3.5rem;
-    font-weight: 600;
-    
-}
-.home h3{
-    font-size: 2.2rem;
-    font-weight: 500;
-  
-}
-p{
-    font-size: 1.3rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
+body {
+  background-color: var(--br-color);
+  color: var(--text-color);
 }
 
-
-
-
-
-
-.facebook:hover{
-   cursor: pointer;
+.home span {
+  color: var(--main-color);
+}
+.home h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.home h3 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
-.youtube:hover{
-   cursor: pointer;
-}
-.github:hover{
-   cursor: pointer;
-}
-.linkedin:hover{
-   cursor: pointer;
-}
-.instagram:hover{
-   cursor: pointer;
+.facebook:hover {
+  cursor: pointer;
 }
 
+.youtube:hover {
+  cursor: pointer;
+}
+.github:hover {
+  cursor: pointer;
+}
+.linkedin:hover {
+  cursor: pointer;
+}
+.instagram:hover {
+  cursor: pointer;
+}
 
-  
-  .home {
-    display: flex;
-    align-items: center;
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  flex: 1.8; /* Takes up the left side */
+  padding-right: 20px; /* Add spacing between the content and image */
+  height: auto;
+  width: 500%;
+}
+
+.home-img {
+  flex: 1; /* Takes up the right side */
+}
+
+.home-img img {
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  width: auto; /* Maintain aspect ratio */
+  transition: floteImage 4s ease-in-out infinite;
+}
+@keyframes floteImage {
+  0% {
+    transform: translateY(0);
   }
-  
-  .content {
-    flex: 1.8; /* Takes up the left side */
-    padding-right: 20px; /* Add spacing between the content and image */
-    height: auto;
-    width: 500%;
+  50% {
+    transform: translateY(-2.4rem);
   }
-  
-  .home-img {
-    flex: 1; /* Takes up the right side */
+  100% {
+    transform: translateY(0);
   }
-  
-  .home-img img {
-    max-width: 100%; /* Ensure the image does not exceed its container */
-    width: auto; /* Maintain aspect ratio */
-    transition: floteImage 4s ease-in-out infinite; 
-  
-  }
-  @keyframes floteImage {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-2.4rem);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
+}
 
-  .btn{
-    display:inline-blocK;
-    padding: 0.7rem 4rem;
-    background-color: var(--main-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 0.5rem var(--main-color);
-    font-size: 1.2rem;
-    color: var(--second-bg-color);
-    letter-spacing: .08rem;
-    font-weight: 600;
-    margin-top: 2.5rem;
-
-  }
-  .para1{
-    min-height:100vh;
-    padding:10rem 9% 2rem;
-    margin-top:auto ;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-  }
-  
-  
-   
-  
-
-  
+.btn {
+  display: inline-blocK;
+  padding: 0.7rem 4rem;
+  background-color: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 0.5rem var(--main-color);
+  font-size: 1.2rem;
+  color: var(--second-bg-color);
+  letter-spacing: 0.08rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+.para1 {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+  margin-top: auto;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}

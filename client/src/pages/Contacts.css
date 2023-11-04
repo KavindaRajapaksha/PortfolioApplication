@@ -1,68 +1,65 @@
-.contacts, .admin-only{
-    min-height:100vh;
-    padding: 10rem 9% 2rem;
-    margin-top:auto ;
+.contacts,
+.admin-only {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+  margin-top: auto;
 }
-.row1 , .row2{
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
-    margin-bottom: 3rem;
-    /* Each set takes 50% of the viewport height */
+.row1,
+.row2 {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+  /* Each set takes 50% of the viewport height */
 }
 
-#message{
-    height : 5rem;
-    width: 100%;
-    text-align:initial;
+#message {
+  height: 5rem;
+  width: 100%;
+  text-align: initial;
 }
-.heading{
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 5rem;
-    text-align: center;
-    margin-top: auto;
+.heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 5rem;
+  text-align: center;
+  margin-top: auto;
 }
-.heading span{
-    color: var(--main-color);
+.heading span {
+  color: var(--main-color);
 }
-.btn-message{
-    display:flex;
-    padding: 0.7rem 4rem;
-    background-color: var(--main-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 0.5rem var(--main-color);
-    font-size: 1.2rem;
-    color: var(--second-bg-color);
-    letter-spacing: .08rem;
-    font-weight: 600;
-    margin:2.5rem auto 0px auto;
-   
-  
-
+.btn-message {
+  display: flex;
+  padding: 0.7rem 4rem;
+  background-color: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 0.5rem var(--main-color);
+  font-size: 1.2rem;
+  color: var(--second-bg-color);
+  letter-spacing: 0.08rem;
+  font-weight: 600;
+  margin: 2.5rem auto 0px auto;
 }
-.btn-message:hover{
-    background-color: var(--second-bg-color);
-    color: var(--main-color);
-    cursor: pointer;
+.btn-message:hover {
+  background-color: var(--second-bg-color);
+  color: var(--main-color);
+  cursor: pointer;
 }
-#ak{
-    background-color: var(--second-color);
+#ak {
+  background-color: var(--second-color);
 }
-.adminOnly{
-    
-    display:flex;
-    padding:0.7rem 2rem;
-    background-color: var(--br-color);
-    border-radius: 4rem;
-    color: azure;
-    box-shadow: 0 0 0.5rem var(--br-color);
-    margin: 3rem 10rem 0px auto;
+.adminOnly {
+  display: flex;
+  padding: 0.7rem 2rem;
+  background-color: var(--br-color);
+  border-radius: 4rem;
+  color: azure;
+  box-shadow: 0 0 0.5rem var(--br-color);
+  margin: 3rem 10rem 0px auto;
 }
-.adminOnly:hover{
-    
-    color: var(--main-color);
-    cursor: pointer;
-    transform: scale(1.03);
-    transition: 1s ease-in-out;
+.adminOnly:hover {
+  color: var(--main-color);
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 1s ease-in-out;
 }

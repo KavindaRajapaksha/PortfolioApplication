@@ -1,18 +1,18 @@
 .footer {
-    width: 100%;
-    height: 50px;
-    background-color: #191d24;
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #191d24;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pc {
-    font-size: 90%;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 18px;
+  font-size: 90%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
 }
