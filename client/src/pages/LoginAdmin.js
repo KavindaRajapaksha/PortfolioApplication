@@ -1,8 +1,33 @@
-import React from "react";
-
+import React, { useState } from "react";
 import "./LoginAdmin.css";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export default function LoginAdmin() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const adminData = {
+      email,
+      password,
+    };
+    try {
+      await axios.post("http://localhost:8000/adminLogin", adminData);
+      alert("Admin logged in");
+      navigate("/contacts/list");
+    } catch (err) {
+      console.log(err);
+      alert("Invalid credentials");
+
+      setEmail(""); // Clear email field
+      setPassword("");
+    }
+  };
+
   return (
     <div className="loginpage">
       <section className="login">
@@ -11,29 +36,38 @@ export default function LoginAdmin() {
             <h3>LOGIN</h3>
           </div>
           <div className="loginDetails">
-            <label for="uname">
-              <b>Username</b>
-            </label>
-            <br></br>
-            <input
-              type="text"
-              placeholder="Enter Username"
-              className="uname"
-              required
-            ></input>
-            <br></br>
-            <label for="pword">
-              <b>Password</b>
-            </label>
-            <br></br>
-            <input
-              type="text"
-              placeholder="Enter Password"
-              className="pword"
-              required
-            ></input>
+            <form onSubmit={handleSubmit}>
+              <label htmlFor="uname">
+                <b>email</b>
+              </label>
+              <br />
+              <input
+                type="email"
+                id="uname"
+                placeholder="Enter Username"
+                className="uname"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <br />
+              <label htmlFor="pword">
+                <b>Password</b>
+              </label>
+              <br />
+              <input
+                type="password"
+                id="pword"
+                placeholder="Enter Password"
+                className="pword"
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <button className="login-btn">Sign In</button>
+            </form>
           </div>
-          <button className="login-btn">Sign In</button>
+
           <p>
             Do not have an account?
             <span>
