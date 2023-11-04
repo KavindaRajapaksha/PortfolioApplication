@@ -7,7 +7,7 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Contacts from "./pages/Contacts";
 import ViewMessage from "./pages/ViewMessage";
-import NavBar from "./components/NavBar";
+
 import LoginAdmin from "./pages/LoginAdmin";
 import Register from "./pages/Register";
 import List from "./pages/List";
@@ -23,10 +23,10 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contacts" element={<Contacts />} />
-          <Route path="/viewmessage" element={<ViewMessage />} />
+          <Route path="/viewmessage/:id" element={<ViewMessage />} />
           <Route path="/contacts/login" element={<LoginAdmin/>}/>
           <Route path="/contacts/register" element={<Register/>} />
-          <Route path="/conacts/list" element={<List/>} />
+          <Route path="/contacts/list" element={<List/>} />
         </Routes>
       </BrowserRouter>
     </div>

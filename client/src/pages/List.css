@@ -1,0 +1,67 @@
+.List-pg{
+    background-image:  url(../assets/pexels-andrew-neel-3178786.jpg);
+    background-size:cover;
+    min-height: 100vh;
+}
+.List-content{
+    padding:10rem 9% 2rem;
+    margin-top:auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-table{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0 0 1rem rgba(221, 220, 220, 0.5);
+    justify-content: center;
+    align-items: center;
+
+}
+.thead{
+    text-align: center;
+}
+th{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+}
+td{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+}
+.view-btn{
+    margin-right:1rem;
+    background-color: #1E90FF;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+.delete-btn{
+    background-color: #FF0000;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+.delete-btn:hover{
+    background-color: #fff;
+    color: rgb(245, 10, 10);
+    padding: 3px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.view-btn:hover{
+    background-color: #fff;
+    color: #1E90FF;
+    padding: 3px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
